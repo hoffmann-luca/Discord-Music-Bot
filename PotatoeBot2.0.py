@@ -344,7 +344,7 @@ class MyClient(discord.Client):
         global skipFlip
         global isPlaylistLooped
 
-        if "potatoetyl" in str(message.author):
+        if "NAME_OF_THE_BOT" in str(message.author):
             pass
         else:
             print(message.content + " from " + str(message.author))
