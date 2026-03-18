@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+StartLimitBurst=5
+StartLimitInterval=10
+
+[Service]
+ExecStart=/bin/bash /root/bot/myapp.sh
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
